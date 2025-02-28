@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OproomDataSet1" targetNamespace="http://tempuri.org/OproomDataSet11.xsd" xmlns:mstns="http://tempuri.org/OproomDataSet11.xsd" xmlns="http://tempuri.org/OproomDataSet11.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="OproomConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="OproomConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.HISPlus.Properties.Settings.GlobalReference.Default.OproomConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_JDoctorTableAdapter" GeneratorDataComponentClassName="V_JDoctorTableAdapter" Name="V_JDoctor" UserDataComponentName="V_JDoctorTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="OproomConnectionString (Settings)" DbObjectName="Oproom.dbo.V_JDoctor" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Serial, StartTime, Fname, Lname, BMDoc_Code, JHelp_Code, Age, BStartTime, BEndTime, Room, OpDate, BType, PRV_Code, PreDiagnosis, PostDiagnosis, KindOfOperation, SpecimenYesNo, SpecimenNumber, OpIndication, OpFinding, BTName, OPTName, NurseName, DoctorName, FirstHelp FROM dbo.V_JDoctor</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Serial" DataSetColumn="Serial" />
+              <Mapping SourceColumn="StartTime" DataSetColumn="StartTime" />
+              <Mapping SourceColumn="Fname" DataSetColumn="Fname" />
+              <Mapping SourceColumn="Lname" DataSetColumn="Lname" />
+              <Mapping SourceColumn="BMDoc_Code" DataSetColumn="BMDoc_Code" />
+              <Mapping SourceColumn="JHelp_Code" DataSetColumn="JHelp_Code" />
+              <Mapping SourceColumn="Age" DataSetColumn="Age" />
+              <Mapping SourceColumn="BStartTime" DataSetColumn="BStartTime" />
+              <Mapping SourceColumn="BEndTime" DataSetColumn="BEndTime" />
+              <Mapping SourceColumn="Room" DataSetColumn="Room" />
+              <Mapping SourceColumn="OpDate" DataSetColumn="OpDate" />
+              <Mapping SourceColumn="BType" DataSetColumn="BType" />
+              <Mapping SourceColumn="PRV_Code" DataSetColumn="PRV_Code" />
+              <Mapping SourceColumn="PreDiagnosis" DataSetColumn="PreDiagnosis" />
+              <Mapping SourceColumn="PostDiagnosis" DataSetColumn="PostDiagnosis" />
+              <Mapping SourceColumn="KindOfOperation" DataSetColumn="KindOfOperation" />
+              <Mapping SourceColumn="SpecimenYesNo" DataSetColumn="SpecimenYesNo" />
+              <Mapping SourceColumn="SpecimenNumber" DataSetColumn="SpecimenNumber" />
+              <Mapping SourceColumn="OpIndication" DataSetColumn="OpIndication" />
+              <Mapping SourceColumn="OpFinding" DataSetColumn="OpFinding" />
+              <Mapping SourceColumn="BTName" DataSetColumn="BTName" />
+              <Mapping SourceColumn="OPTName" DataSetColumn="OPTName" />
+              <Mapping SourceColumn="NurseName" DataSetColumn="NurseName" />
+              <Mapping SourceColumn="DoctorName" DataSetColumn="DoctorName" />
+              <Mapping SourceColumn="FirstHelp" DataSetColumn="FirstHelp" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OproomDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="OproomDataSet1" msprop:Generator_UserDSName="OproomDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="V_JDoctor" msprop:Generator_TableClassName="V_JDoctorDataTable" msprop:Generator_TableVarName="tableV_JDoctor" msprop:Generator_TablePropName="V_JDoctor" msprop:Generator_RowDeletingName="V_JDoctorRowDeleting" msprop:Generator_RowChangingName="V_JDoctorRowChanging" msprop:Generator_RowEvHandlerName="V_JDoctorRowChangeEventHandler" msprop:Generator_RowDeletedName="V_JDoctorRowDeleted" msprop:Generator_UserTableName="V_JDoctor" msprop:Generator_RowChangedName="V_JDoctorRowChanged" msprop:Generator_RowEvArgName="V_JDoctorRowChangeEvent" msprop:Generator_RowClassName="V_JDoctorRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Serial" msprop:Generator_ColumnVarNameInTable="columnSerial" msprop:Generator_ColumnPropNameInRow="Serial" msprop:Generator_ColumnPropNameInTable="SerialColumn" msprop:Generator_UserColumnName="Serial" type="xs:double" />
+              <xs:element name="StartTime" msprop:Generator_ColumnVarNameInTable="columnStartTime" msprop:Generator_ColumnPropNameInRow="StartTime" msprop:Generator_ColumnPropNameInTable="StartTimeColumn" msprop:Generator_UserColumnName="StartTime">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fname" msprop:Generator_ColumnVarNameInTable="columnFname" msprop:Generator_ColumnPropNameInRow="Fname" msprop:Generator_ColumnPropNameInTable="FnameColumn" msprop:Generator_UserColumnName="Fname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Lname" msprop:Generator_ColumnVarNameInTable="columnLname" msprop:Generator_ColumnPropNameInRow="Lname" msprop:Generator_ColumnPropNameInTable="LnameColumn" msprop:Generator_UserColumnName="Lname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="35" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BMDoc_Code" msprop:Generator_ColumnVarNameInTable="columnBMDoc_Code" msprop:Generator_ColumnPropNameInRow="BMDoc_Code" msprop:Generator_ColumnPropNameInTable="BMDoc_CodeColumn" msprop:Generator_UserColumnName="BMDoc_Code" type="xs:short" minOccurs="0" />
+              <xs:element name="JHelp_Code" msprop:Generator_ColumnVarNameInTable="columnJHelp_Code" msprop:Generator_ColumnPropNameInRow="JHelp_Code" msprop:Generator_ColumnPropNameInTable="JHelp_CodeColumn" msprop:Generator_UserColumnName="JHelp_Code" type="xs:short" minOccurs="0" />
+              <xs:element name="Age" msprop:Generator_ColumnVarNameInTable="columnAge" msprop:Generator_ColumnPropNameInRow="Age" msprop:Generator_ColumnPropNameInTable="AgeColumn" msprop:Generator_UserColumnName="Age" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BStartTime" msprop:Generator_ColumnVarNameInTable="columnBStartTime" msprop:Generator_ColumnPropNameInRow="BStartTime" msprop:Generator_ColumnPropNameInTable="BStartTimeColumn" msprop:Generator_UserColumnName="BStartTime" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BEndTime" msprop:Generator_ColumnVarNameInTable="columnBEndTime" msprop:Generator_ColumnPropNameInRow="BEndTime" msprop:Generator_ColumnPropNameInTable="BEndTimeColumn" msprop:Generator_UserColumnName="BEndTime" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Room" msprop:Generator_ColumnVarNameInTable="columnRoom" msprop:Generator_ColumnPropNameInRow="Room" msprop:Generator_ColumnPropNameInTable="RoomColumn" msprop:Generator_UserColumnName="Room" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OpDate" msprop:Generator_ColumnVarNameInTable="columnOpDate" msprop:Generator_ColumnPropNameInRow="OpDate" msprop:Generator_ColumnPropNameInTable="OpDateColumn" msprop:Generator_UserColumnName="OpDate">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BType" msprop:Generator_ColumnVarNameInTable="columnBType" msprop:Generator_ColumnPropNameInRow="BType" msprop:Generator_ColumnPropNameInTable="BTypeColumn" msprop:Generator_UserColumnName="BType" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="PRV_Code" msprop:Generator_ColumnVarNameInTable="columnPRV_Code" msprop:Generator_ColumnPropNameInRow="PRV_Code" msprop:Generator_ColumnPropNameInTable="PRV_CodeColumn" msprop:Generator_UserColumnName="PRV_Code" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PreDiagnosis" msprop:Generator_ColumnVarNameInTable="columnPreDiagnosis" msprop:Generator_ColumnPropNameInRow="PreDiagnosis" msprop:Generator_ColumnPropNameInTable="PreDiagnosisColumn" msprop:Generator_UserColumnName="PreDiagnosis" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PostDiagnosis" msprop:Generator_ColumnVarNameInTable="columnPostDiagnosis" msprop:Generator_ColumnPropNameInRow="PostDiagnosis" msprop:Generator_ColumnPropNameInTable="PostDiagnosisColumn" msprop:Generator_UserColumnName="PostDiagnosis" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KindOfOperation" msprop:Generator_ColumnVarNameInTable="columnKindOfOperation" msprop:Generator_ColumnPropNameInRow="KindOfOperation" msprop:Generator_ColumnPropNameInTable="KindOfOperationColumn" msprop:Generator_UserColumnName="KindOfOperation" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SpecimenYesNo" msprop:Generator_ColumnVarNameInTable="columnSpecimenYesNo" msprop:Generator_ColumnPropNameInRow="SpecimenYesNo" msprop:Generator_ColumnPropNameInTable="SpecimenYesNoColumn" msprop:Generator_UserColumnName="SpecimenYesNo" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="SpecimenNumber" msprop:Generator_ColumnVarNameInTable="columnSpecimenNumber" msprop:Generator_ColumnPropNameInRow="SpecimenNumber" msprop:Generator_ColumnPropNameInTable="SpecimenNumberColumn" msprop:Generator_UserColumnName="SpecimenNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OpIndication" msprop:Generator_ColumnVarNameInTable="columnOpIndication" msprop:Generator_ColumnPropNameInRow="OpIndication" msprop:Generator_ColumnPropNameInTable="OpIndicationColumn" msprop:Generator_UserColumnName="OpIndication" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OpFinding" msprop:Generator_ColumnVarNameInTable="columnOpFinding" msprop:Generator_ColumnPropNameInRow="OpFinding" msprop:Generator_ColumnPropNameInTable="OpFindingColumn" msprop:Generator_UserColumnName="OpFinding" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BTName" msprop:Generator_ColumnVarNameInTable="columnBTName" msprop:Generator_ColumnPropNameInRow="BTName" msprop:Generator_ColumnPropNameInTable="BTNameColumn" msprop:Generator_UserColumnName="BTName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OPTName" msprop:Generator_ColumnVarNameInTable="columnOPTName" msprop:Generator_ColumnPropNameInRow="OPTName" msprop:Generator_ColumnPropNameInTable="OPTNameColumn" msprop:Generator_UserColumnName="OPTName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NurseName" msprop:Generator_ColumnVarNameInTable="columnNurseName" msprop:Generator_ColumnPropNameInRow="NurseName" msprop:Generator_ColumnPropNameInTable="NurseNameColumn" msprop:Generator_UserColumnName="NurseName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DoctorName" msprop:Generator_ColumnVarNameInTable="columnDoctorName" msprop:Generator_ColumnPropNameInRow="DoctorName" msprop:Generator_ColumnPropNameInTable="DoctorNameColumn" msprop:Generator_UserColumnName="DoctorName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FirstHelp" msprop:Generator_ColumnVarNameInTable="columnFirstHelp" msprop:Generator_ColumnPropNameInRow="FirstHelp" msprop:Generator_ColumnPropNameInTable="FirstHelpColumn" msprop:Generator_UserColumnName="FirstHelp" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
